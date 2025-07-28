@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="title">AllFinder!</h1>
+
+    <div id="search-container">
+      <input
+        type="search"
+        name="search-bar"
+        id="search-bar"
+        placeholder="Type to search..."
+      />
+      <button type="button" id="search-button">Search</button>
+    </div>
+
+    <nav id="search-tabs">
+      <span class="tab active" data-tab="wikipedia-tab">Wikipedia</span>
+      <span class="tab" data-tab="news-tab">News</span>
+      <span class="tab" data-tab="images-tab">Images</span>
+    </nav>
+    
+    
+
+    <div id="results-container">
+      <div class="tab-content active" id="wikipedia-tab">
+        <!-- Wikipedia API results -->
+      </div>
+      <div class="tab-content " id="news-tab">
+        <!-- News API results -->
+      </div>
+      <div class="tab-content " id="images-tab">
+        <!-- Image API results -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
